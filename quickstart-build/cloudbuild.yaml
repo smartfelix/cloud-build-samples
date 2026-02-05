@@ -17,10 +17,10 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   dir: 'quickstart-build'
   script: |
-    docker build -t us-west1-docker.pkg.dev/$PROJECT_ID/quickstart-image:tag1 .
+    docker build -t us-west1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1 .
   automapSubstitutions: true
 images:
-- 'us-west1-docker.pkg.dev/$PROJECT_ID/quickstart-image:tag1'
+- 'us-west1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
 options:
   logging: CLOUD_LOGGING_ONLY
 # [END cloudbuild_quickstart_build]
