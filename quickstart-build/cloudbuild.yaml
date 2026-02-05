@@ -19,7 +19,7 @@ steps:
     docker build -t us-west1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1 .
   automapSubstitutions: true
 images:
-- 'us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+- 'us-west1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
 options:
   default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
 # [END cloudbuild_quickstart_build]
